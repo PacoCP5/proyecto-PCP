@@ -9,15 +9,22 @@ En muchos hospitales existen problemas de organización con los turnos de los en
 
 Realizar una aplicación web que conecte a los hospitales (el cliente) con sus trabajadores, para permitir que estos elijan su preferencia en los turnos y atender así a los pacientes atendiendo a las necesidades de estos utilizando un sistema de triaje (esquema job scheduling).
 
+## Avances del proyecto (Milestones)
+
+* [ ] #### **Milestone 0:**
+
+Representación del modelo, clases compilables que describan la asignación del horario con las estructuras de datos adecuadas.
+
+* [ ] #### Milestone 1:
+
+Implementación de la lógica de negocio, algoritmo para la asignación de horario según las preferencias de cada usuario.
+
 ## Documentación adicional
 
 Para ver que el repositorio está bien configurado:
 
-Carpeta `.git`:
+ [Carpeta `.git`](docs/Documentación-0/Captura de pantalla de 2022-09-16 19-15-18.png)
 
-###### ![](./Documentación-0/Captura de pantalla de 2022-09-16 19-15-18.png)
+[Archivo `config`](docs/Documentación-0/Captura de pantalla de 2022-09-16 19-15-40.png)
 
-Archivo `config`:
-
-![](./Documentación-0/Captura de pantalla de 2022-09-16 19-15-40.png)
-
+[Historias de usuario](docs/Documentación-1/HUs.md)
