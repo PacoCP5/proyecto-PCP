@@ -11,20 +11,29 @@ Realizar una aplicación web que conecte a los hospitales (el cliente) con sus t
 
 ## Avances del proyecto (Milestones)
 
-* [ ] #### **Milestone 0:**
+* [x] #### **Milestone 0:**
 
 Representación del modelo, clases compilables que describan la asignación del horario con las estructuras de datos adecuadas.
 
-* [ ] #### Milestone 1:
+* [x] #### **Milestone 1:**
 
 Implementación de la lógica de negocio, algoritmo para la asignación de horario según las preferencias de cada usuario.
 
+* [x] #### **Milestone 2:**
+
+Interfaz de usuario para la aplicación.
+
+
 ## Documentación adicional
 
-Para ver que el repositorio está bien configurado:
-
- [Carpeta `.git`](docs/Documentación-0/Captura de pantalla de 2022-09-16 19-15-18.png)
-
-[Archivo `config`](docs/Documentación-0/Captura de pantalla de 2022-09-16 19-15-40.png)
+[Tipos de usuario](docs/Documentación-1/users.md)
 
 [Historias de usuario](docs/Documentación-1/HUs.md)
+
+## Configuración del repositorio
+
+Para ver que el repositorio está bien configurado: 
+
+[Carpeta `.git`](docs/Documentación-0/Captura de pantalla de 2022-09-16 19-15-18.png)
+
+[Archivo `config`](docs/Documentación-0/Captura de pantalla de 2022-09-16 19-15-40.png)
