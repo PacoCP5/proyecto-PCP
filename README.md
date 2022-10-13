@@ -13,7 +13,7 @@ Realizar una aplicación web que conecte a los hospitales (el cliente) con sus t
 
 * [x] #### **Milestone 0:**
 
-Representación del modelo, clases compilables que describan la asignación del horario con las estructuras de datos adecuadas.
+Representación del modelo, clases compilables que describan la asignación del horario a los usuarios (trabajadores) con las estructuras de datos adecuadas.
 
 * [x] #### **Milestone 1:**
 
@@ -21,7 +21,7 @@ Implementación de la lógica de negocio, algoritmo para la asignación de horar
 
 * [x] #### **Milestone 2:**
 
-Interfaz de usuario para la aplicación.
+Interfaz de usuario para la aplicación que permita a los usuarios introducir su preferencia de los horarios y muestre la asignación.
 
 
 ## Documentación adicional
