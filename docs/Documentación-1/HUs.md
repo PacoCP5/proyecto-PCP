@@ -10,4 +10,4 @@ Juana organiza los turnos de los enfermeros en papel y a mano cada semana, lo cu
 
 ## [HU3] Javier quiere poder cambiar de turno sin justificar el cambio
 
-A Javier le ha tocado varias veces con un TCAE (Auxiliar de enfermería) con el cual la dinámica de trabajo no es buena y le gustaría poder elegir cambiar de compañero. Si pudiese elegir su expresar su preferencia en los turnos sin justificación trabajaría más cómodo.
+A Javier le ha tocado varias veces con un TCAE (Auxiliar de enfermería) con el cual la dinámica de trabajo no es buena y le gustaría poder elegir cambiar de compañero. Si pudiese elegir su preferencia en los turnos sin tener que justificarlo, trabajaría más cómodo.
