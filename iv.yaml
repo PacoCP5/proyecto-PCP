@@ -1,9 +1,4 @@
 lenguaje: ruby
-
-objeto valor:
-  - src/trabajador.rb
-  - src/turno.rb
-
 entidad:
   - src/turnoTrabajador.rb
   - src/horario.rb
