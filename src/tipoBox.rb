@@ -1,10 +1,8 @@
-# Enumerado del tipo de box posibles (A, B, C o D)
+# Enumerado del tipo de box posibles en función al tipo de trabajo
 
 module tipoBox
 
-    A = :a                  # Box A
-    B = :b                  # Box B
-    C = :c                  # Box C
-    D = :d                  # Box D
+    NORMAL = :normal                 # Turno normal
+    REFUERZO = :refuerzo             # Turno de refuerzo
 
 end
