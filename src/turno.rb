@@ -1,7 +1,7 @@
 # Clase Turno --> cada objeto de tipo Turno contendrá los datos de un Turno.
 
-require_relative 'enums/tipoTurno.rb'
-require_relative 'enums/tipoBox.rb'
+require_relative 'tipoTurno.rb'
+require_relative 'tipoBox.rb'
 
 class Turno
 
