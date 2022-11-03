@@ -30,6 +30,18 @@ Interfaz de usuario para la aplicación que permita a los usuarios introducir su
 
 [Historias de usuario](docs/Documentación-1/HUs.md)
 
+## Automatización
+
+### Gestor de versiones
+
+Se han elegido **RVM** como gestor de versiones tras considerar Rbenv como alternativa. A pesar de que Rbenv es más ligero, RVM posee más funcionalidades e incluye un mecanismo de instalación de Ruby incorporado, con lo cual lo he considerado una mejor opción.
+
+Para instalar RVM he seguido las instrucciones de su [página oficial](https://rvm.io/rvm/install).
+
+### Gestor de tareas y dependencias
+
+He elegido **Rake** como gestor de tareas y **Bundler** como gestor de dependencias, ya que no he encontrado ninguna alternativa con la documentación suficientemente clara y estas herramientas están bastante extendidas en la comunidad.
+
 ## Configuración del repositorio
 
 Para ver que el repositorio está bien configurado: 
