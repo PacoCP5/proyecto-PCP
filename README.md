@@ -42,6 +42,12 @@ Para instalar RVM he seguido las instrucciones de su [página oficial](https://r
 
 He elegido **Rake** como gestor de tareas y **Bundler** como gestor de dependencias, ya que no he encontrado ninguna alternativa con la documentación suficientemente clara y estas herramientas están bastante extendidas en la comunidad.
 
+Para comprobar la sintaxis de las entidades se utilizará:
+
+```makefile
+rake check
+```
+
 ## Configuración del repositorio
 
 Para ver que el repositorio está bien configurado: 
