@@ -12,6 +12,5 @@ end
 desc 'Instalar todas las dependencias necesarias usando Bundler'
 task :installdeps do
 	puts 'Instalando dependencias necesarias...'
-	exec 'gem install bundler'
 	exec 'bundle install'
 end
