@@ -34,13 +34,13 @@ Interfaz de usuario para la aplicación que permita a los usuarios introducir su
 
 ### Gestor de versiones
 
-Se han elegido **RVM** como gestor de versiones tras considerar Rbenv como alternativa. A pesar de que Rbenv es más ligero, RVM posee más funcionalidades e incluye un mecanismo de instalación de Ruby incorporado, con lo cual lo he considerado una mejor opción.
+Se han elegido **RVM** como gestor de versiones tras considerar Rbenv como alternativa. El criterio que he seguido ha sido que RVM tiene un mecanismo de instalación de Ruby incorporado, con lo cual lo encuentro más cómodo de usar, a pesar de que Rbenv es más ligero.
 
 Para instalar RVM he seguido las instrucciones de su [página oficial](https://rvm.io/rvm/install).
 
 ### Gestor de tareas y dependencias
 
-He elegido **Rake** como gestor de tareas y **Bundler** como gestor de dependencias, ya que no he encontrado ninguna alternativa con la documentación suficientemente clara y estas herramientas están bastante extendidas en la comunidad.
+He elegido **Rake** como gestor de tareas y **Bundler** como gestor de dependencias, ya que no he encontrado ninguna alternativa con la documentación suficientemente clara y estas herramientas están bastante extendidas en la comunidad. 
 
 Para comprobar la sintaxis de las entidades se utilizará:
 
