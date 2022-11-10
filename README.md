@@ -40,12 +40,16 @@ Para instalar RVM he seguido las instrucciones de su [página oficial](https://r
 
 ### Gestor de tareas y dependencias
 
-He elegido **Rake** como gestor de tareas y **Bundler** como gestor de dependencias, ya que no he encontrado ninguna alternativa con la documentación suficientemente clara y estas herramientas están bastante extendidas en la comunidad. 
+Mis criterios a la hora de elegir estas herramientas van a ser la velocidad y la frescura (es decir, el mantenimiento que reciben estas herramientas).
+
+Para el gestor de dependencias he elegido **Bundler**, ya que tiene soporte reciente y su uso es el más extendido, a pesar de haber considerado otras opciones como Gel, la cual es más rápida, pero he encontrado un error de incompatibilidad con la versión de Ruby que estoy usando.
+
+Por otro lado, para el gestor de tareas he eligido **Make** cuyo uso está ampliamente extendido en la comunidad y recibe soporte continuamente, frente a Rake, el cual es el más usado en la comunidad de Ruby, debido a que este no recibe soporte desde hace tiempo (su última versión es de julio de 2021).
 
 Para comprobar la sintaxis de las entidades se utilizará:
 
 ```makefile
-rake check
+make check
 ```
 
 ## Configuración del repositorio
