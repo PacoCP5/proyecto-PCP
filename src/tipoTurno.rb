@@ -1,6 +1,6 @@
 # Enumerado del tipo de turnos posibles (mañana, tarde o noche)
 
-module tipoTurno
+module TipoTurno
 
     MANIANA = :maniana              # Turno de mañana
     TARDE = :tarde                  # Turno de tarde

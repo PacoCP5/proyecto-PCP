@@ -1,6 +1,6 @@
 # Enumerado del tipo de box posibles en función al tipo de trabajo
 
-module tipoBox
+module TipoBox
 
     A: a
     B: b
