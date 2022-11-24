@@ -2,7 +2,9 @@
 
 module tipoBox
 
-    NORMAL = :normal                 # Turno normal
-    REFUERZO = :refuerzo             # Turno de refuerzo
+    A: a
+    B: b
+    C: c
+    D: d
 
 end
