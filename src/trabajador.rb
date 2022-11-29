@@ -9,7 +9,7 @@ class Trabajador
 
     # Método inicializar clase Trabajador
     def initialize(id, nombre)
-        @ID_trabajador = id             # Identificador del Trabajador    
+        @id_trabajador = id             # Identificador del Trabajador    
         @nombre = nombre                # Nombre completo del trabajador
     end 
 

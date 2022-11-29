@@ -4,11 +4,10 @@ check:
 	@echo 'Comprobando sintaxis...'
 	ruby -c ./src/*.rb
 
-
 # Ejecutar test automáticos
-test:
+tests:
 	@echo 'Ejecutando tests...'
-
+	ruby ./test/testHorario.rb
 
 # Instalar todas las dependencias necesarias usando Bundler
 installdeps:

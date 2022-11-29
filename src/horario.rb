@@ -4,9 +4,9 @@ class Horario
     #### CONSTRUCTOR ####
 
     # Método inicializar clase Horario
-    def initialize(lista_trabajadores_turno, semana)
-        @semana = semana                                        # Semana a la que corresponde el horario
-        @lista_trabajadores_turno = lista_trabajadores_turno    # Lista de todos los Trabajadores asociados a cada Turno
+    def initialize(turnos_asignados, semana)
+        @turnos_asignados = turnos_asignados    # Lista de todos los Trabajadores asociados a cada Turno
+        @semana = semana                        # Semana a la que corresponde el horario
     end 
 
 end

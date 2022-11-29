@@ -5,3 +5,4 @@ entidad:
 automatizar:
   fichero: Rakefile
   orden: rake
+test: test/testHorario.rb
