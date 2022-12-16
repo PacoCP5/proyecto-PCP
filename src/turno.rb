@@ -1,8 +1,5 @@
 # Clase Turno --> cada objeto de tipo Turno contendrá los datos de un Turno.
 
-require_relative 'tipoTurno.rb'
-require_relative 'tipoBox.rb'
-
 class Turno
 
     #### GETTERS ####
@@ -12,9 +9,12 @@ class Turno
     #### CONSTRUCTOR ####
         
     # Método inicializar clase Turno
-    def initialize(id, tipo_turno, box)
-        @tipo_turno = tipoTurno::tipo_turno         # Tipo de turno (enum: maniana, tarde, noche)
-        @box = tipoBox::box                         # Box donde se realiza el turno
+    def initialize(turno, box)
+        @tipo_turno = turno         # Tipo de turno (enum: maniana, tarde, noche)
+        @box = box                         # Box donde se realiza el turno
     end 
 
+    def to_s()
+        return "#{@tipo_turno}:#{@box}"
+    end
 end
