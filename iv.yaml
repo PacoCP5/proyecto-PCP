@@ -3,6 +3,6 @@ entidad:
   - src/turno_trabajador.rb
   - src/horario.rb
 automatizar:
-  fichero: Rakefile
-  orden: rake
-test: test/test_horario.rb
+  fichero: Makefile
+  orden: make
+test: t/test_horario.rb
