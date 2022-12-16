@@ -1,8 +1,8 @@
 lenguaje: ruby
 entidad:
-  - src/turnoTrabajador.rb
+  - src/turno_trabajador.rb
   - src/horario.rb
 automatizar:
   fichero: Rakefile
   orden: rake
-test: test/testHorario.rb
+test: test/test_horario.rb
