@@ -55,6 +55,12 @@ make check
 ## Biblioteca de aserciones y test runner
 Las herramientas más utilizadas para realizar estas tareas son `rspec` y `minitest`, las cuales ya incluyen una biblioteca de aserciones integrada. Ambos tienen una frescura adecuada y un uso extendido amplio (ver [este enlace](https://www.ruby-toolbox.com/categories/testing_frameworks)). Los criterios que voy a seguir van a ser la flexibilidad a la hora de poder elegir entre TDD y BDD (me gustaría poder seguir TDD), así que usaré **minitest**, puesto que este permite seguir tanto TDD como BDD y `rspec` está más enfocado a BDD.
 
+Para realizar la ejecución de los test se debe utilizar la orden:
+
+```makefile
+make test
+```
+
 ## Configuración del repositorio
 
 Para ver que el repositorio está bien configurado: 
