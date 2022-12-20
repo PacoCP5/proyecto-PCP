@@ -2,8 +2,9 @@ name: Autopublish to DockerHub
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'Dockerfile'
+      - 'Gemfile'
 
 jobs:
   build:
