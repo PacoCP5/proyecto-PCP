@@ -1,7 +1,6 @@
 FROM ruby:3.2.0-rc1-alpine3.17
 
 RUN apk add --update make
-
 RUN adduser -D userRuby
 
 USER userRuby
