@@ -15,15 +15,16 @@ class TestHorario < Minitest::Test
         @trabajadores << Trabajador.new(6,TipoTurno[0] => 1, TipoTurno[1] => 1, TipoTurno[2] => 4)
         @trabajadores << Trabajador.new(7,TipoTurno[0] => 2, TipoTurno[1] => 0, TipoTurno[2] => 2)
         @trabajadores << Trabajador.new(8,TipoTurno[0] => 1, TipoTurno[1] => 3, TipoTurno[2] => 0)
-        @trabajadores << Trabajador.new(9,TipoTurno[0] => 0, TipoTurno[1] => 1, TipoTurno[2] => 1)
+        @trabajadores << Trabajador.new(9,TipoTurno[0] => 1, TipoTurno[1] => 1, TipoTurno[2] => 1)
         @trabajadores << Trabajador.new(10,TipoTurno[0] => 3, TipoTurno[1] => 0, TipoTurno[2] => 0)
         @trabajadores << Trabajador.new(11,TipoTurno[0] => 1, TipoTurno[1] => 3, TipoTurno[2] => 2)
         @trabajadores << Trabajador.new(12,TipoTurno[0] => 1, TipoTurno[1] => 0, TipoTurno[2] => 0)
         
         @num_boxes = 3
         @fecha=Date.new(2022,12,12)
+        @dias_turno = 7
 
-        @horario = Horario.new(@trabajadores,@fecha,@num_boxes)
+        @horario = Horario.new(@trabajadores, @fecha, @num_boxes, @dias_turno)
         @asignacion = @horario.turnos_asignados
 
     end

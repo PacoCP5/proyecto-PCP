@@ -17,7 +17,7 @@ class Horario
     # @param [Array] trabajadores --> lista de trabajadores
     # @param [Date] primer_dia_semana --> primer día de la semana a generar el horario, debe ser un lunes
     # @param [Integer] cant_box --> cantidad de box que se tienen en el centro
-    def initialize(trabajadores,primer_dia_semana,cant_box)
+    def initialize(trabajadores,primer_dia_semana,cant_box, dias_turno)
 
         # Lista de boxes disponibles para la semana
         boxes =  TipoBox[0..cant_box-1]
@@ -35,7 +35,7 @@ class Horario
         turno_anterior = nil
         @turnos_asignados = []
         turno_dia = []
-        7.times do |i| # Para cada día
+        dias_turno.times do |i| # Para cada día
             turno_dia.clear
             
             trabajadores_clone = trabajadores.clone # copia de los trabajadores
