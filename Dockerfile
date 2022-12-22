@@ -1,17 +1,29 @@
-FROM ruby:3.2.0-rc1-alpine3.17
+FROM alpine:latest
 
-RUN apk add --update make
+LABEL maintainer="pacocp5@correo.ugr.es"
+
+RUN apk add --update \
+                    ruby \
+                    make 
+
 RUN adduser -D userRuby
 
 USER userRuby
+
+# Obtenido de la imagen oficial de entorno
+ENV GEM_HOME /home/userRuby/.local/bundle
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 \
+	BUNDLE_APP_CONFIG="$GEM_HOME"
+ENV PATH $GEM_HOME/bin:$PATH
+
+RUN gem install bundler:2.3.25
 
 WORKDIR /home/userRuby
 
 COPY --chown=userRuby Gemfile Gemfile.lock ./
 
-RUN gem install bundler:2.2.33
-RUN bundle install
+RUN bundle install  
 
 WORKDIR /app/test
 
-CMD ["make", "test"]
+ENTRYPOINT ["make", "test"]

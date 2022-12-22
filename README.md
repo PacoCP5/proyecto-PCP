@@ -66,15 +66,15 @@ make test
 En primer lugar, debemos elegir la imagen base para el contenedor que automatizará las pruebas. 
 Los criterios serán principalmente lo ligera que sea la imagen y que la versión del lenguaje Ruby sea la última.
 
-La versión con la que trabajaremos será la última actualmente, que es la 3.2. Siguiendo también las [buenas prácticas a la hora de crear un contenedor para Ruby](https://lipanski.com/posts/dockerfile-ruby-best-practices), debemos usar solamente versiones oficiales o versiones propias (de las cuales no dispongo), por lo tanto he mirado en la [página oficial](https://hub.docker.com/_/ruby), las imágenes base disponibles para esta versión.
+La versión con la que trabajaremos será la última actualmente, que es la 3.2. Siguiendo también las [buenas prácticas a la hora de crear un contenedor para Ruby](https://lipanski.com/posts/dockerfile-ruby-best-practices), debemos usar solamente versiones oficiales o versiones propias, por lo tanto he mirado en la [página oficial](https://hub.docker.com/_/ruby), las imágenes base disponibles para esta versión.
 
-Para elegir entre todas ellas, nos quedaremos con la más ligera por supuesto. Estas son las versiones y el tamaño que ocupan:
+Estas son las versiones y el tamaño que ocupan:
  - `ruby:3.2.0-rc1-alpine3.17`: 71.43MB
  - `ruby:3.2.0-rc1-buster`: 856.49MB
  - `ruby:3.2.0-rc1-slim-bullseye`: 163.3MB
- - `ruby:3.2.0-rc1-bullsete`: 888.05MB 
+ - `ruby:3.2.0-rc1-bullseye`: 888.05MB 
 
-También he probado la aplicación montada sobre esta imagen base y la imagen final ocupa unos 24 MB de más aproximadamente, con lo cual nuestra elección para la imagen base es `ruby:3.2.0-rc1-alpine3.17`.
+También esta la opción de instalar un sistema operativo como base e instalar el lenguaje sobre él. Si hacemos esto la imagen resultante, que es la que finalmente estamos utilizando ocupa unos 45.73 MB, con lo cual es nuestra mejor opción.
 
 ## Configuración del repositorio
 
