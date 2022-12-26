@@ -74,7 +74,7 @@ Estas son las versiones y el tamaño que ocupan:
  - `ruby:3.2.0-rc1-slim-bullseye`: 163.3MB
  - `ruby:3.2.0-rc1-bullseye`: 888.05MB 
 
-También esta la opción de instalar un sistema operativo como base e instalar el lenguaje sobre él. Si hacemos esto la imagen resultante, que es la que finalmente estamos utilizando ocupa unos 45.73 MB, con lo cual es nuestra mejor opción.
+También esta la opción de instalar un sistema operativo como base e instalar el lenguaje sobre él. Si hacemos esto con Alpine como SO la imagen resultante, que es la que finalmente estamos utilizando ocupa unos 45.73 MB. Además, usando el gestor de paquetes de Alpine `apk` se instala también la versión `ruby:3.2.0-r0`, la cual es la más reciente, con lo cual es nuestra mejor opción.
 
 ## Configuración del repositorio
 

@@ -4,16 +4,15 @@ LABEL maintainer="pacocp5@correo.ugr.es"
 
 RUN apk add --update \
                     ruby \
-                    make 
-
-RUN adduser -D userRuby
+                    make; \
+    adduser -D userRuby
 
 USER userRuby
 
 # Obtenido de la imagen oficial de entorno
-ENV GEM_HOME /home/userRuby/.local/bundle
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 \
-	BUNDLE_APP_CONFIG="$GEM_HOME"
+ENV GEM_HOME /home/userRuby/.local/bundle \
+    BUNDLE_SILENCE_ROOT_WARNING=1 \
+	BUNDLE_APP_CONFIG="$GEM_HOME" 
 ENV PATH $GEM_HOME/bin:$PATH
 
 RUN gem install bundler:2.3.25
