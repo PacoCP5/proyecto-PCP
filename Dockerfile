@@ -23,6 +23,8 @@ COPY --chown=userRuby Gemfile Gemfile.lock ./
 
 RUN bundle install  
 
+RUN rm /home/userRuby/Gemfile /home/userRuby/Gemfile.lock
+
 WORKDIR /app/test
 
 ENTRYPOINT ["make", "test"]
