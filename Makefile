@@ -10,7 +10,6 @@ check:
 
 test:
 	@echo 'Ejecutando tests...'
-# El true es para que no pare el make si falla un test
 	ruby ./t/test_horario.rb
 
 # Instalar todas las dependencias necesarias usando Bundler
