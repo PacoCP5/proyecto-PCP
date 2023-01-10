@@ -1,4 +1,5 @@
 source "https://rubygems.org"
 
-gem "minitest"
-gem "debug", ">= 1.0.0"
+group :development do
+  gem 'minitest', '~> 5.16'
+end

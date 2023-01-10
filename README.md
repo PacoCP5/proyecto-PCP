@@ -61,6 +61,21 @@ Para realizar la ejecución de los test se debe utilizar la orden:
 make test
 ```
 
+## Elección del contenedor para automatizar las pruebas
+
+En primer lugar, debemos elegir la imagen base para el contenedor que automatizará las pruebas. 
+Los criterios serán principalmente lo ligera que sea la imagen y que la versión del lenguaje Ruby sea la última.
+
+La versión con la que trabajaremos será la última actualmente, que es la 3.2. Siguiendo también las [buenas prácticas a la hora de crear un contenedor para Ruby](https://lipanski.com/posts/dockerfile-ruby-best-practices), debemos usar solamente versiones oficiales o versiones propias, por lo tanto he mirado en la [página oficial](https://hub.docker.com/_/ruby), las imágenes base disponibles para esta versión.
+
+Estas son las versiones y el tamaño que ocupan:
+ - `ruby:3.2.0-rc1-alpine3.17`: 71.43MB
+ - `ruby:3.2.0-rc1-buster`: 856.49MB
+ - `ruby:3.2.0-rc1-slim-bullseye`: 163.3MB
+ - `ruby:3.2.0-rc1-bullseye`: 888.05MB 
+
+También esta la opción de instalar un sistema operativo como base e instalar el lenguaje sobre él. Si hacemos esto con Alpine como SO la imagen resultante, que es la que finalmente estamos utilizando ocupa unos 45.73 MB. Además, usando el gestor de paquetes de Alpine `apk` se instala también la versión `ruby:3.2.0-r0`, la cual es la más reciente, con lo cual es nuestra mejor opción.
+
 ## Configuración del repositorio
 
 Para ver que el repositorio está bien configurado: 
