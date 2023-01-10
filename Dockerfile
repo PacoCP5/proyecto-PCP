@@ -13,7 +13,7 @@ ENV BUNDLE_SILENCE_ROOT_WARNING=1 \
 	BUNDLE_APP_CONFIG=${GEM_HOME} \
     PATH="${GEM_HOME}/bin:${PATH}"
 
-RUN gem install bundler:2.3.25
+RUN gem install bundler
 
 WORKDIR /home/pcp
 
