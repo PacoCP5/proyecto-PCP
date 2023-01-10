@@ -5,6 +5,7 @@ on:
     paths:
       - 'Dockerfile'
       - 'Gemfile'
+      - 'Gemfile.lock'
 
 jobs:
   build:
